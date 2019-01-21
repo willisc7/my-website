@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import Avatar from '@material-ui/core/Avatar';
 
 // @material-ui/icons
 
@@ -12,8 +13,11 @@ import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import MyHeaderLinks from "components/Header/MyHeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
+import Card from "components/Card/Card.jsx";
+import CardBody from "components/Card/CardBody.jsx";
+import CardFooter from "components/Card/CardFooter.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
@@ -21,6 +25,9 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
+
+// Images
+import profilePicture from "assets/img/profilePicture.jpg";
 
 const dashboardRoutes = [];
 
@@ -32,8 +39,8 @@ class MyLandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
+          brand="Chris Willis"
+          rightLinks={<MyHeaderLinks />}
           fixed
           changeColorOnScroll={{
             height: 400,
@@ -44,24 +51,34 @@ class MyLandingPage extends React.Component {
         <Parallax filter image={require("assets/img/landing-bg.jpg")}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Chris Willis</h1>
-                <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that's why we added this text here. Add here all
-                  the information that can make you or your product create the
-                  first impression.
-                </h4>
-                <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-play" />Watch video
+              <GridItem xs={12} sm={12} md={4}>
+                <Card plain>
+                  <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                    <Avatar alt="Chris Willis" src={profilePicture} className={classes.bigAvatar} />
+                  </GridItem>
+                  <h4 className={classes.cardTitle}>
+                    Network Engineer
+                  </h4>
+                  <CardBody>
+                    <p className={classes.description}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse pulvinar egestas ligula eu mattis.
+                      Praesent bibendum orci quis risus feugiat, eu aliquam magna finibus.
+                      Etiam sem purus, maximus luctus consectetur in, imperdiet pretium lorem.
+                  </p>
+                  </CardBody>
+                  <CardFooter className={classes.justifyCenter}>
+                    <Button
+                      color="danger"
+                      size="lg"
+                      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Resume
                 </Button>
+                  </CardFooter>
+                </Card>
               </GridItem>
             </GridContainer>
           </div>
