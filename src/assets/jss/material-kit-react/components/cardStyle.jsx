@@ -22,7 +22,9 @@ const cardStyle = {
     boxShadow: "none"
   },
   cardCarousel: {
-    overflow: "hidden"
+    overflow: "hidden",
+    width: "400px",
+    height: "400px"
   }
 };
 

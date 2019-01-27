@@ -1,7 +1,7 @@
 const imagesStyles = {
   imgBigAvatar: {
-    width: "200px",
-    height: "200px"
+    width: 400,
+    height: 400
   },
   imgFluid: {
     maxWidth: "100%",
