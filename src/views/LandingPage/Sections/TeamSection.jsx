@@ -50,7 +50,7 @@ class TeamSection extends React.Component {
       <div className={classes.section}>
         <div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={4} className={classes.marginAuto}>
+            <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img src={profilePicture} alt="..." className={imageClasses} />
@@ -81,7 +81,7 @@ class TeamSection extends React.Component {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+            <GridItem xs={6} sm={6} md={6} className={classes.marginAuto}>
               <Card carousel>
                 <h4 className={classes.cardTitle}>
                   Life Events
@@ -129,7 +129,7 @@ class TeamSection extends React.Component {
                 </Carousel>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+            <GridItem xs={6} sm={6} md={6} className={classes.marginAuto}>
               <Card carousel>
                 <h4 className={classes.cardTitle}>
                   Food
