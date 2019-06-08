@@ -17,8 +17,8 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import TeamSection from "./Sections/TeamSection.jsx.js";
-import WorkSection from "./Sections/WorkSection.jsx.js";
+import TeamSection from "./Sections/TeamSection.jsx";
+import WorkSection from "./Sections/WorkSection.jsx";
 
 const dashboardRoutes = [];
 

@@ -1,6 +1,6 @@
 const parallaxStyle = {
   parallax: {
-    height: "40vh",
+    height: "20vh",
     maxHeight: "1000px",
     overflow: "hidden",
     position: "relative",
