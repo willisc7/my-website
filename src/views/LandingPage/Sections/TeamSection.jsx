@@ -25,6 +25,9 @@ import lifeEvents2 from "assets/img/lifeEvents2.jpg";
 import lifeEvents3 from "assets/img/lifeEvents3.jpg";
 import profilePicture from "assets/img/profilePicture.jpg";
 
+// Docs
+import resume from "assets/docs/resume.pdf"
+
 class TeamSection extends React.Component {
   render() {
     const { classes } = this.props;
@@ -55,21 +58,21 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Chris Willis
                   <br />
-                  <small className={classes.smallTitle}>Network Engineer</small>
+                  <small className={classes.smallTitle}>DevOps Engineer</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    Enthusiastic about platform, virtualization, and
+                    network architecture and implementation. Lover
+                    of coffee and video games. I love food and I'm
+                    always seeking new food to try or places to eat.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Button
                     color="danger"
                     size="lg"
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    href={resume}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
